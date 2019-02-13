@@ -8,6 +8,17 @@ namespace ECS.Legacy.refacored
 {
     interface IHeater
     {
+        void TurnOn();
+        
+
+        void TurnOff();
+        
+
+
+        bool RunSelfTest();
+
+    }
+}
 
     }
 }
