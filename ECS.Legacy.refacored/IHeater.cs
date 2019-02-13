@@ -8,5 +8,6 @@ namespace ECS.Legacy.refacored
 {
     interface IHeater
     {
+
     }
 }
