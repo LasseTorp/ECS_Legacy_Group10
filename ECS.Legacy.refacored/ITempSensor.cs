@@ -8,5 +8,12 @@ namespace ECS.Legacy.refacored
 {
     interface ITempSensor
     {
+        
+
+        int GetTemp();
+
+
+        bool RunSelfTest();
+
     }
 }
