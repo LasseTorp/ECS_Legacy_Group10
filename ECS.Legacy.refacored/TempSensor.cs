@@ -8,6 +8,8 @@ namespace ECS.Legacy.refacored
 {
     class TempSensor : ITempSensor
     {
+        // Hej lasse 
+
         private Random gen = new Random();
 
         public int GetTemp()
