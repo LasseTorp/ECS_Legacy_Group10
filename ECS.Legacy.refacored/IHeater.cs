@@ -20,5 +20,3 @@ namespace ECS.Legacy.refacored
     }
 }
 
-    }
-}
