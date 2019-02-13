@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ECS.Legacy.refacored
 {
-    interface ITempSensor
+    public interface ITempSensor
     {
         
 
