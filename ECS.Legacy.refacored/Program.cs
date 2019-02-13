@@ -10,6 +10,7 @@ namespace ECS.Legacy.refacored
     {
         static void Main(string[] args)
         {
+
         }
     }
 }

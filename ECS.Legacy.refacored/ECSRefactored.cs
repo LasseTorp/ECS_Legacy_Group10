@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace ECS.Legacy.refacored
 {
-    public class ECS
+    public class ECSRefactored
     {
         private int _threshold;
-        private readonly TempSensor _tempSensor;
-        private readonly Heater _heater;
+        private readonly ITempSensor _tempSensor;
+        private readonly IHeater _heater;
 
-        public ECS(int thr)
+        public ECSRefactored(int thr, IHeater IH, ITempSensor ITS)
         {
             SetThreshold(thr);
-            _tempSensor = new TempSensor();
-            _heater = new Heater();
+            _tempSensor = ITS;
+            _heater = IH;
         }
 
         public void Regulate()

@@ -9,7 +9,7 @@ namespace ECS.Unit.Tests
 {
     class FakeHeater : IHeater
     {
-        private bool _on;
+        public bool _on { set; get; }
         public bool _status { get; set; }
         public void TurnOn()
         {
