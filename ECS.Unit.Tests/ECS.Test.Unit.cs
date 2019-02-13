@@ -40,5 +40,13 @@ namespace ECS.Unit.Tests
             Assert.That(fakeHeater_._on, Is.EqualTo(true));
         }
 
+        [Test]
+        public void getCurTemp_25degrees_25degrees()  //Stub
+        {
+            fakeTempSensor_._temp = 25;
+            
+            Assert.That(UUT_.GetCurTemp(), Is.EqualTo(25));
+        }
+
     }
 }
