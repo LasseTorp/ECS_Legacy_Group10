@@ -53,6 +53,12 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ECS.Legacy.refacored\ECS.Legacy.refacored.csproj">
+      <Project>{bb95954a-43aa-4eac-939f-3cd92f8585b6}</Project>
+      <Name>ECS.Legacy.refacored</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
