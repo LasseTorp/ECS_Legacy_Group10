@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ECS.Test.Unit.cs" />
+    <Compile Include="ECS.Test.Unit.Substitute.cs" />
     <Compile Include="FakeHeater.cs" />
     <Compile Include="FakeTempSensor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
