@@ -24,5 +24,21 @@ namespace ECS.Unit.Tests
 
             UUT_ = new ECSRefactored(25,heater_,tempSensor_);
         }
+
+        [Test]
+        public void RunSelfTest_TempSensorFails_SelfTestFails()
+        {
+            tempSensor_.RunSelfTest().Returns(false);
+            heater_.RunSelfTest().Returns(true);
+            Assert.IsFalse(UUT_.RunSelfTest());
+        }
+
+        [Test]
+        public void Regulate_TempBelowThreshold_HeaterTurnedOn()
+        {
+            tempSensor_.GetTemp().Returns(UUT_.GetThreshold() - 10);
+            UUT_.Regulate();
+            heater_.Received(1).TurnOn();
+        }
     }
 }
